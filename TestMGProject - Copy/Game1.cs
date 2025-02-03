@@ -26,7 +26,9 @@ namespace TestMGProjecr
         private Texture2D cupcakeTexture;
         private Vector2 positionVec;
         private Rectangle positionRec;
-        private SpriteFont arial36Bold;
+        private SpriteFont arial20Bold;
+        private KeyboardState kbState;
+
 
 
         public Game1()
@@ -71,7 +73,7 @@ namespace TestMGProjecr
             // Use the cupcake image in this project, and reference it via the Texture2D
             // field called "cupcakeTexture"
             cupcakeTexture = Content.Load<Texture2D>("cupcake");
-            arial36Bold = Content.Load<SpriteFont>("arial-36-bold");
+            arial20Bold = Content.Load<SpriteFont>("arial-20-bold");
 
             // If a value is dependent on a loaded content (like getting
             // image boundaries), initialize the value here! 
@@ -105,7 +107,9 @@ namespace TestMGProjecr
             // Move the image down in the game window.
             positionVec.Y += 1;
 
-            
+
+            kbState = Keyboard.GetState();
+
             // ----------------------------------------------------------------
             // Keep this base call as the LAST thing in your Update method!
             // ----------------------------------------------------------------
@@ -118,10 +122,6 @@ namespace TestMGProjecr
             // Feel free to clear to a different color
             // ----------------------------------------------------------------
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-
-            // Grab keyboard information!
-            KeyboardState kbState = new KeyboardState();
 
 
             // ----------------------------------------------------------------
@@ -143,20 +143,13 @@ namespace TestMGProjecr
                 positionRec,            // Upper-left/Width/Height
                 Color.HotPink);         // Color overlay (pink tint)
 
-            _spriteBatch.DrawString(
-                arial36Bold,            // Sprite Font asset
-                "Hi all!",              // Message
-                new Vector2(0, 0),      // Position
-                Color.Indigo);          // Text color
-
-            // ONLY DRAW THIS WHEN THE USER PRESSES THE ENTER KEY!!!
             if (kbState.IsKeyDown(Keys.Enter))
             {
                 _spriteBatch.DrawString(
-                    arial36Bold,            // Sprite Font asset
-                    (497).ToString(),       // Message
-                    new Vector2(50, 100),      // Position
-                    Color.Indigo);          // Text color
+                    arial20Bold,            // Font to use
+                    "Hi everyone!\nHi",     // String to draw
+                    new Vector2(0, 0),      // Position
+                    Color.Black);           // Color
             }
 
             _spriteBatch.End();
