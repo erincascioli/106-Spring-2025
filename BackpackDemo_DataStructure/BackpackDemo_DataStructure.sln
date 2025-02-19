@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackpackDemo_DataStructure", "BackpackDemo_DataStructure.csproj", "{3C0162BA-BFB6-4CA5-B8F1-CE3678737BF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C0162BA-BFB6-4CA5-B8F1-CE3678737BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0162BA-BFB6-4CA5-B8F1-CE3678737BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0162BA-BFB6-4CA5-B8F1-CE3678737BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0162BA-BFB6-4CA5-B8F1-CE3678737BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA461FE0-4A59-4547-85B6-BE5A94243FE7}
+	EndGlobalSection
+EndGlobal
